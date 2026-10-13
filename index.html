@@ -540,7 +540,7 @@ const PEOPLE = {
     },
     perfect:["Full marks?! Who helped you? Be honest.","Perfect score! I'm the luckiest person alive.","100%? I'm framing this for our future house."],
     tiles:{ok:"pure luck",bad:"we all saw that",skip:"ghosted, like my texts",time:"of pure chaos"},
-    credit:"Built with love by Betty Liz, a.k.a. Money: your girlfriend, your biggest fan and your full-time roaster ♥",
+    credit:"Built with love by Betty Liz, a.k.a. Monkey: your girlfriend, your biggest fan and your full-time roaster ♥",
     footQuips:["Every roast on this site was written with love. Mostly.","Warning: may contain traces of affection.","Side effects include learning IIoT and blushing.","No negative marking here. Only negative comments. Kidding. Love you."]
   },
   sathya:{
@@ -582,7 +582,7 @@ const PEOPLE = {
     },
     perfect:["A perfect score! I'm so, so proud of you.","Full marks! I'm literally screaming.","100%! You're unstoppable, darling."],
     tiles:{ok:"look at you shine",bad:"just learning moments",skip:"next time",time:"well spent"},
-    credit:"Built with love by Betty Liz, a.k.a. Money: your bestie, your cheerleader and your forever person ♥",
+    credit:"Built with love by Betty Liz, a.k.a. Monkey: your bestie, your cheerleader and your forever person ♥",
     footQuips:["Every line here was written with a hug.","Side effects include smiling at your screen.","No negative marking, only positive vibes.","Made for one of my favourite humans."]
   }
 };
@@ -885,7 +885,7 @@ function vFab(){
 function render(){
   document.documentElement.style.setProperty("--accent",S.person?me().accent:"#3d4a7a");
   const v={pick:vPick,home:vHome,setup:vSetup,exam:vExam,result:vResult}[S.screen]();
-  $app.innerHTML=vHeader()+v+(S.screen!=="exam"?`<p class="foot">${S.person?esc(me().credit)+`<br><span class="small">${esc(me().footQuips[Math.floor(Date.now()/864e5)%me().footQuips.length])}</span>`:"Built with love by Betty Liz, a.k.a. Money ♥"}<br><span class="small">Questions from the NPTEL assignments, July to October 2026.</span></p>`:"")+(S.confirm&&S.exam?vConfirm():"")+vFab();
+  $app.innerHTML=vHeader()+v+(S.screen!=="exam"?`<p class="foot">${S.person?esc(me().credit)+`<br><span class="small">${esc(me().footQuips[Math.floor(Date.now()/864e5)%me().footQuips.length])}</span>`:"Built with love by Betty Liz, a.k.a. Monkey ♥"}<br><span class="small">Questions from the NPTEL assignments, July to October 2026.</span></p>`:"")+(S.confirm&&S.exam?vConfirm():"")+vFab();
 }
 
 /* ---------- exam engine ---------- */
